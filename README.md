@@ -323,6 +323,7 @@ scripts/              HDF5 检查脚本
 
 | 主题 | 文件 |
 |------|------|
+| Agent 说明 | [docs/AGENTS.md](docs/AGENTS.md) |
 | 读取流程与内存中的拓扑 | [docs/fluent-cff-dat-cas-structure.md](docs/fluent-cff-dat-cas-structure.md) |
 | HDF5 字段树 | [docs/cff-v21-cas-dat-hdf5-field-tree.md](docs/cff-v21-cas-dat-hdf5-field-tree.md) |
 | 已知 HDF5 源文件问题 | [docs/hdf5-errors.md](docs/hdf5-errors.md) |

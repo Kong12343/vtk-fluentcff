@@ -5,22 +5,22 @@
 - 项目内说明：[`fluent-cff-dat-cas-structure.md`](./fluent-cff-dat-cas-structure.md)
 - 本仓库 Reader 实现：[`../vtk/IO/FLUENTCFF/vtkFLUENTCFFReader.cxx`](../vtk/IO/FLUENTCFF/vtkFLUENTCFFReader.cxx)（实际打开的路径与数据集/属性名）
 
-**说明：** 下文先给出 **通用** CFF 树（与 Reader 一致）；**第 4 节** 为 V21 样例的完整 HDF5 树与 `fields` 清单（2026-04-15 用 `h5py` 遍历生成）。当前训练样例目录已迁至 `E:/klj/angle-ml/`，具体 glob 以 [`python/train_config.json`](../python/train_config.json) 为准。
+**说明：** 下文先给出通用 CFF 树（与 Reader 一致）；第 4 节为 V21 样例的完整 HDF5 树与 `fields` 清单（2026-04-15 用 `h5py` 遍历生成）。
 
 ---
 
-## 项目相关路径（便于对照）
+## 本仓库中的对应文件
 
 ```
-gnn/
-├── CLAUDE.md                          # 项目约定与当前外部数据路径
-├── (外部) E:/klj/angle-ml/            # 训练样例（.cas.h5 / .dat.h5）
+vtk-fluentcff/
 ├── docs/
+│   ├── AGENTS.md
 │   ├── fluent-cff-dat-cas-structure.md
 │   └── cff-v21-cas-dat-hdf5-field-tree.md   # 本文件
 └── vtk/IO/FLUENTCFF/
-    ├── vtkFLUENTCFFReader.cxx        # HDF5 读取逻辑
-    └── vtkFLUENTCFFInternal.h        # 字段显示名映射（非 HDF 路径）
+    ├── vtkFLUENTCFFReader.cxx               # HDF5 读取逻辑
+    ├── vtkFLUENTCFFReaderTransient.cxx
+    └── vtkFLUENTCFFInternal.h               # 字段显示名映射（非 HDF 路径）
 ```
 
 ---
