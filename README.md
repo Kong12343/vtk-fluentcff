@@ -184,6 +184,7 @@ target_link_libraries(my_app PRIVATE VTK::IOFLUENTCFF)
 
 | 主题 | 文件 |
 |------|------|
+| Agent 说明 | [docs/AGENTS.md](docs/AGENTS.md) |
 | 模块改动与 API（含 transient） | [docs/fluent-cff-modified-modules.md](docs/fluent-cff-modified-modules.md) |
 | Reader 读取流程 | [docs/fluent-cff-dat-cas-structure.md](docs/fluent-cff-dat-cas-structure.md) |
 | HDF5 字段树 | [docs/cff-v21-cas-dat-hdf5-field-tree.md](docs/cff-v21-cas-dat-hdf5-field-tree.md) |

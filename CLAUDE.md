@@ -1,1 +1,0 @@
-E:/klj/vtk-fluentcff/AGENTS.md
